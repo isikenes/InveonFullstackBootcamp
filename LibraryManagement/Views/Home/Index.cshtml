@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center my-5">
+    <h1 class="display-4 mb-5">Welcome to the Library Management</h1>
+
+    @if(User.Identity.IsAuthenticated) {
+        <a href="/Books" class="btn btn-primary mt-5 px-3 fs-5">Books</a>
+        <br />
+        @if (User.IsInRole("Admin"))
+        {
+            <a href="/Admin" class="btn btn-warning mt-3 px-3 fs-5">Admin Page</a>
+        }
+    } else{
+        <a href="/Account/Login" class="btn btn-success mt-5 px-3 fs-5">Login</a>
+        <br />
+        <a href="/Account/Register" class="btn btn-success mt-3 px-3 fs-5">Register</a>
+    }
+    
+</div>

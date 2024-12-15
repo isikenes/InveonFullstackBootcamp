@@ -1,0 +1,23 @@
+﻿@model Book
+
+@{
+    ViewData["Title"] = "Book details";
+}
+
+
+<div>
+    <h2>Book Details</h2>
+    <hr />
+    <p class="fs-5"><b>Id:</b> @Model.Id</p>
+    <p class="fs-5"><b>Title:</b> @Model.Title</p>
+    <p class="fs-5"><b>Author:</b> @Model.Author</p>
+    <p class="fs-5"><b>Publication Year:</b> @Model.PublicationYear</p>
+    <p class="fs-5"><b>ISBN:</b> @Model.ISBN</p>
+    <p class="fs-5"><b>Genre:</b> @Model.Genre</p>
+    <p class="fs-5"><b>Publisher:</b> @Model.Publisher</p>
+    <p class="fs-5"><b>Page count:</b> @Model.PageCount</p>
+    <p class="fs-5"><b>Language:</b> @Model.Language</p>
+    <p class="fs-5"><b>Summary:</b> @Model.Summary</p>
+    <p class="fs-5"><b>Available copies:</b> @Model.AvailableCopies</p>
+
+</div>
